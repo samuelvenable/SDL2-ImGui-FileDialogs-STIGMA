@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<object>
+  <spriteName>&lt;undefined&gt;</spriteName>
+  <solid>0</solid>
+  <visible>-1</visible>
+  <depth>0</depth>
+  <persistent>0</persistent>
+  <maskName>&lt;undefined&gt;</maskName>
+  <parentName>&lt;undefined&gt;</parentName>
+  <events>
+    <event enumb="0" eventtype="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <useapplyto>-1</useapplyto>
+        <isquestion>0</isquestion>
+        <exetype>2</exetype>
+        <functionname/>
+        <codestring/>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>window_set_min_width(800);&#13;
+window_set_min_height(600);&#13;
+&#13;
+// Remember the Good Old Days of GameMaker 8.1 and before?&#13;
+// Remember the super customizable Mark Overmars PopUpBox?&#13;
+// Well, they're back, and potentially better than ever...&#13;
+&#13;
+// All Parts of the Dialogs have Editable Text&#13;
+// Not only useful to change the wording of it&#13;
+// Also good for creating your own translation &#13;
+// American English is the Language by Default&#13;
+// There are Two Other Language Localizations:&#13;
+DialogSetLocaleToAmericanEnglish();&#13;
+//DialogSetLocaleToSimplifiedChinese();&#13;
+//DialogSetLocaleToBrazilianPortuguese();&#13;
+&#13;
+// Set Window Size for Dialogs:&#13;
+DialogSetWindowSize(720, 394);&#13;
+&#13;
+// Set Title Bar Caption of Non-File-or-Directory-Selection Dialogs:&#13;
+environment_set_variable("IMGUI_DIALOG_CAPTION", room_caption);&#13;
+&#13;
+// Do Not Display Any Dialogs in Borderless Mode (Default Behavior):&#13;
+environment_set_variable("IMGUI_DIALOG_NOBORDER", string(false));&#13;
+&#13;
+// Do Not Display Any Dialog as a Fullscreen Window (Default Behavior):&#13;
+environment_set_variable("IMGUI_DIALOG_FULLSCREEN", string(false));&#13;
+&#13;
+// Select a Custom Theme for All Dialogs: &#13;
+// Classic=-1, Dark=0, Light=1, Custom=2&#13;
+// Example themes -1 to 1 are from ImGui&#13;
+environment_set_variable("IMGUI_DIALOG_THEME", string(2));&#13;
+&#13;
+// Set the Custom Color Theme:&#13;
+// Color Scheme (R,G,B=0,1,2) &#13;
+environment_set_variable("IMGUI_TEXT_COLOR_0", string(1));&#13;
+environment_set_variable("IMGUI_TEXT_COLOR_1", string(1));&#13;
+environment_set_variable("IMGUI_TEXT_COLOR_2", string(1));&#13;
+environment_set_variable("IMGUI_HEAD_COLOR_0", string(0.35));&#13;
+environment_set_variable("IMGUI_HEAD_COLOR_1", string(0.55));&#13;
+environment_set_variable("IMGUI_HEAD_COLOR_2", string(0.55));&#13;
+environment_set_variable("IMGUI_AREA_COLOR_0", string(0.18));&#13;
+environment_set_variable("IMGUI_AREA_COLOR_1", string(0.18));&#13;
+environment_set_variable("IMGUI_AREA_COLOR_2", string(0.18));&#13;
+environment_set_variable("IMGUI_BODY_COLOR_0", string(1));&#13;
+environment_set_variable("IMGUI_BODY_COLOR_1", string(1));&#13;
+environment_set_variable("IMGUI_BODY_COLOR_2", string(1));&#13;
+environment_set_variable("IMGUI_POPS_COLOR_0", string(0.07));&#13;
+environment_set_variable("IMGUI_POPS_COLOR_1", string(0.07));&#13;
+environment_set_variable("IMGUI_POPS_COLOR_2", string(0.07));&#13;
+&#13;
+// Desired Font Size:&#13;
+DialogSetFontSize(20);&#13;
+&#13;
+nDialogId = 0;</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event enumb="0" eventtype="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <useapplyto>-1</useapplyto>
+        <isquestion>0</isquestion>
+        <exetype>2</exetype>
+        <functionname/>
+        <codestring/>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Echo Results in a Message Box&#13;
+// Do Not Echo When Empty String&#13;
+&#13;
+if (nDialogId == 0) { if (nDialogResult == 1) show_message("OK"); }&#13;
+&#13;
+if (nDialogId == 1) { if (nDialogResult == 0) show_message("No");&#13;
+if (nDialogResult == 1) show_message("Yes"); }&#13;
+&#13;
+if (nDialogId == 2) { if (nDialogResult == 1) show_message("Yes");&#13;
+if (nDialogResult ==  2) show_message("No");&#13;
+if (nDialogResult ==  3) show_message("Cancel"); }&#13;
+&#13;
+if (nDialogId == 3) { if (lpDialogResult != "") show_message(lpDialogResult); }&#13;
+&#13;
+if (nDialogId == 4) { if (lpDialogResult != "") show_message(lpDialogResult); }&#13;
+&#13;
+if (nDialogId == 5) { if (lpDialogResult != "") show_message(lpDialogResult); }&#13;
+&#13;
+if (nDialogId == 6) { if (lpDialogResult != "") show_message(lpDialogResult); }&#13;
+&#13;
+if (nDialogId == 7) { show_message(lpDialogResult); }&#13;
+&#13;
+if (nDialogId == 8) { show_message(nDialogResult); }&#13;
+&#13;
+// Next Dialog&#13;
+nDialogId += 1;&#13;
+&#13;
+// End of Demo&#13;
+if (nDialogId == 9) nDialogId = 0;</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event enumb="53" eventtype="6">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <useapplyto>-1</useapplyto>
+        <isquestion>0</isquestion>
+        <exetype>2</exetype>
+        <functionname/>
+        <codestring/>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Show OK-Only Message Box&#13;
+if (nDialogId == 0) { nDialogResult = show_message("This is a dialog box. Click OK to continue."); alarm[0] = 10; }&#13;
+&#13;
+// Show Yes/No Question Box&#13;
+if (nDialogId == 1) { nDialogResult = show_question("Here is a question box. Yes or no?"); alarm[0] = 10; }&#13;
+&#13;
+// Show Yes/No/Cancel Question Box&#13;
+if (nDialogId == 2) { nDialogResult = show_message_ext("Here is yet another question box. Yes, no, or cancel?", "Yes", "No", "Cancel"); alarm[0] = 10; }&#13;
+&#13;
+// Set Filter For File Dialogs&#13;
+lpFilter = "Supported Image Files (*.png *.gif *.jpg *.jpeg)|*.png;*.gif;*.jpg;*.jpeg|PNG Image Files (*.png)|*.png|GIF Image Files (*.gif)|*.gif|JPEG Image Files (*.jpg *.jpeg)|*.jpg;*.jpeg";&#13;
+&#13;
+// Select One Existing File and Echo the Result On-Open-Button&#13;
+if (nDialogId == 3) { lpDialogResult = get_open_filename_ext(lpFilter, "Select a file", "", "Open File"); alarm[0] = 10; }&#13;
+&#13;
+// Select One (or More) Existing File(s) and Echo the Result On-Open-Button&#13;
+if (nDialogId == 4) { lpDialogResult = get_open_filenames_ext(lpFilter, "Select one or more files", "", "Open Files"); alarm[0] = 10; }&#13;
+&#13;
+// Select One New (or Existing) File and Echo the Result On-Save-Button&#13;
+if (nDialogId == 5) { lpDialogResult = get_save_filename_ext(lpFilter, "Untitled.png", "", "Save As"); alarm[0] = 10; }&#13;
+&#13;
+// Select One Existing Directory and Echo the Result On-Open-Button&#13;
+if (nDialogId == 6) { lpDialogResult = get_directory_alt("Select Directory", ""); alarm[0] = 10; }&#13;
+&#13;
+// Force get_string/integer calls to have a Cancel Button&#13;
+environment_set_variable("IMGUI_DIALOG_CANCELABLE", string(1));&#13;
+&#13;
+// Enter a String in the TextBox and Echo the Result if the Result is Not Empty&#13;
+if (nDialogId == 7) { lpDialogResult = get_string("Enter a string in the input box below:", "ENTER TEXT HERE"); alarm[0] = 10; }&#13;
+&#13;
+// Enter a Number in the TextBox and Echo the Result&#13;
+if (nDialogId == 8) { nDialogResult = get_integer("Enter a number in the input box below:", 404); alarm[0] = 10; }</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event enumb="0" eventtype="8">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <useapplyto>-1</useapplyto>
+        <isquestion>0</isquestion>
+        <exetype>2</exetype>
+        <functionname/>
+        <codestring/>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_set_color(c_white);&#13;
+draw_set_halign(fa_center);&#13;
+draw_set_valign(fa_middle);&#13;
+draw_set_font(fnt_example);&#13;
+draw_text(400, 300, "Left-Click to Open a Dialog Box!")</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
+  <PhysicsObject>0</PhysicsObject>
+  <PhysicsObjectSensor>0</PhysicsObjectSensor>
+  <PhysicsObjectShape>0</PhysicsObjectShape>
+  <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
+  <PhysicsObjectRestitution>0.1</PhysicsObjectRestitution>
+  <PhysicsObjectGroup>0</PhysicsObjectGroup>
+  <PhysicsObjectLinearDamping>0.1</PhysicsObjectLinearDamping>
+  <PhysicsObjectAngularDamping>0.1</PhysicsObjectAngularDamping>
+  <PhysicsObjectFriction>0.2</PhysicsObjectFriction>
+  <PhysicsObjectAwake>-1</PhysicsObjectAwake>
+  <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
+  <PhysicsShapePoints/>
+</object>

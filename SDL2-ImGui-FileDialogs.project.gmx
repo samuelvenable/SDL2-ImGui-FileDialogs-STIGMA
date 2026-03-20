@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<assets>
+  <Configs name="configs">
+    <Config>Configs\Default</Config>
+  </Configs>
+  <scripts name="scripts">
+    <script>scripts\DialogSetFontSize.gml</script>
+    <script>scripts\DialogSetWindowSize.gml</script>
+    <script>scripts\DialogSetLocaleToLanguageTemplate.gml</script>
+    <script>scripts\DialogSetLocaleToAmericanEnglish.gml</script>
+    <script>scripts\DialogSetLocaleToSimplifiedChinese.gml</script>
+    <script>scripts\DialogSetLocaleToBrazilianPortuguese.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_example</font>
+  </fonts>
+  <objects name="objects">
+    <object>objects\obj_example</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_example</room>
+  </rooms>
+  <constants number="0"/>
+  <help>
+    <rtf>help.rtf</rtf>
+  </help>
+</assets>

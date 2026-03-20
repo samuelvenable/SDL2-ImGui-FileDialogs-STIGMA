@@ -1,0 +1,27 @@
+/* Translation contributed by chenxi050402 */
+environment_set_variable("IMGUI_QUICK_ACCESS",                       "主文件夹");
+environment_set_variable("IMGUI_THIS_PC",                            "此电脑");
+environment_set_variable("IMGUI_ALL_FILES",                          "所有文件 (*.*)");
+environment_set_variable("IMGUI_NAME",                               "名称");
+environment_set_variable("IMGUI_DATE_MODIFIED",                      "修改日期");
+environment_set_variable("IMGUI_SIZE",                               "大小");
+environment_set_variable("IMGUI_NEW_FILE",                           "新建文件");
+environment_set_variable("IMGUI_NEW_DIRECTORY",                      "新建文件夹");
+environment_set_variable("IMGUI_DELETE",                             "删除");
+environment_set_variable("IMGUI_ARE_YOU_SURE",                       "确定吗？");
+environment_set_variable("IMGUI_OVERWRITE_FILE",                     "覆盖文件吗？");
+environment_set_variable("IMGUI_ENTER_FILE_NAME",                    "输入文件名");
+environment_set_variable("IMGUI_ENTER_DIRECTORY_NAME",               "输入目录名");
+environment_set_variable("IMGUI_ARE_YOU_SURE_YOU_WANT_TO_DELETE",    "确定要删除 %s 吗？");
+environment_set_variable("IMGUI_ARE_YOU_SURE_YOU_WANT_TO_OVERWRITE", "确定要覆盖 %s 吗？");
+environment_set_variable("IMGUI_YES",                                "是");
+environment_set_variable("IMGUI_NO",                                 "否");
+environment_set_variable("IMGUI_OK",                                 "确定");
+environment_set_variable("IMGUI_CANCEL",                             "取消");
+environment_set_variable("IMGUI_SEARCH",                             "搜索");
+environment_set_variable("IMGUI_FILE_NAME_WITH_COLON",               "文件名：");
+environment_set_variable("IMGUI_FILE_NAME_WITHOUT_COLON",            "文件名");
+environment_set_variable("IMGUI_DIRECTORY_NAME_WITH_COLON",          "目录名称：");
+environment_set_variable("IMGUI_DIRECTORY_NAME_WITHOUT_COLON",       "目录名称");
+environment_set_variable("IMGUI_SAVE",                               "保存");
+environment_set_variable("IMGUI_OPEN",                               "打开");

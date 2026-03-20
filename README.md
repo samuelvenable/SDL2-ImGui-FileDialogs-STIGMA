@@ -1,4 +1,4 @@
-# Dear ImGui Widgets System for StigmaDev
+# Dear ImGui Widgets for StigmaDev
 Create Dear ImGui Dialog Boxes, (Both File Selection and Beyond), in [StigmaDev](https://github.com/samuelvenable/stigma-dev)
 
 ![screenshot0.png](screenshots/screenshot0.png)

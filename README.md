@@ -1,5 +1,5 @@
-# SDL2 ImGui FileDialogs StigmaDev
-Create Dear ImGui Dialog Boxes, (Both File Selection and Beyond), in [StigmaDev](https://github.com/samuelvenable/stigma-dev)
+# SDL2 ImGui FileDialogs STIGMA
+Create Dear ImGui Dialog Boxes, (Both File Selection and Beyond), in [STIGMA](https://github.com/samuelvenable/stigma-dev)
 
 ![screenshot0.png](screenshots/screenshot0.png)
 

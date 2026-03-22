@@ -1,1 +1,0 @@
-return ((environment_set_variable("IMGUI_DIALOG_WIDTH", string(argument0))) && environment_set_variable("IMGUI_DIALOG_HEIGHT", string(argument1)));

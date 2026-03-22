@@ -146,7 +146,8 @@ if (nDialogId == 11) nDialogId = 0;</string>
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Show OK-Only Message Box&#13;
+            <string>if (alarm[0] > 0) exit;&#13;
+// Show OK-Only Message Box&#13;
 if (nDialogId == 0) { nDialogResult = show_message("This is a dialog box. Click OK to continue."); alarm[0] = 10; }&#13;
 &#13;
 // Show Yes/No Question Box&#13;

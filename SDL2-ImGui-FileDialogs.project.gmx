@@ -6,10 +6,6 @@
   <scripts name="scripts">
     <script>scripts\DialogSetFontSize.gml</script>
     <script>scripts\DialogSetWindowSize.gml</script>
-    <script>scripts\DialogSetLocaleToLanguageTemplate.gml</script>
-    <script>scripts\DialogSetLocaleToAmericanEnglish.gml</script>
-    <script>scripts\DialogSetLocaleToSimplifiedChinese.gml</script>
-    <script>scripts\DialogSetLocaleToBrazilianPortuguese.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_example</font>

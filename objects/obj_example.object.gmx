@@ -182,6 +182,9 @@ if (nDialogId == 6) { lpDialogResult = get_directory_alt("Select Directory", "")
 // Force get_string/integer calls to have a Cancel Button&#13;
 if (nDialogId == 7) environment_set_variable("IMGUI_DIALOG_CANCELABLE", string(1));&#13;
 &#13;
+// Force get_string/integer calls to not have Password Input&#13;
+if (nDialogId == 7) environment_set_variable("IMGUI_DIALOG_PASSWORD", string(0));&#13;
+&#13;
 // Enter a String in the TextBox and Echo the Result if the Result is Not Empty&#13;
 if (nDialogId == 7) { lpDialogResult = get_string("Enter a string in the input box below:", "ENTER TEXT HERE"); alarm[0] = 10; }&#13;
 &#13;

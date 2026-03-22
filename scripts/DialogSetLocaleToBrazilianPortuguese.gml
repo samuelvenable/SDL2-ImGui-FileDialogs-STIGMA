@@ -1,9 +1,9 @@
 /* Translation contributed by Bentroen */
-environment_set_variable("IMGUI_QUICK_ACCESS",                       "Acesso rápido");
+environment_set_variable("IMGUI_QUICK_ACCESS",                       "Acesso rÃ¡pido");
 environment_set_variable("IMGUI_THIS_PC",                            "Este computador");
 environment_set_variable("IMGUI_ALL_FILES",                          "Todos os arquivos (*.*)");
 environment_set_variable("IMGUI_NAME",                               "Nome");
-environment_set_variable("IMGUI_DATE_MODIFIED",                      "Data de modificação");
+environment_set_variable("IMGUI_DATE_MODIFIED",                      "Data de modificaÃ§Ã£o");
 environment_set_variable("IMGUI_SIZE",                               "Tamanho");
 environment_set_variable("IMGUI_NEW_FILE",                           "Novo arquivo");
 environment_set_variable("IMGUI_NEW_DIRECTORY",                      "Nova pasta");
@@ -15,13 +15,13 @@ environment_set_variable("IMGUI_ENTER_DIRECTORY_NAME",               "Insira o n
 environment_set_variable("IMGUI_ARE_YOU_SURE_YOU_WANT_TO_DELETE",    "Deseja mesmo excluir %s?");
 environment_set_variable("IMGUI_ARE_YOU_SURE_YOU_WANT_TO_OVERWRITE", "Deseja mesmo substituir %s?");
 environment_set_variable("IMGUI_YES",                                "Sim");
-environment_set_variable("IMGUI_NO",                                 "Não");
+environment_set_variable("IMGUI_NO",                                 "NÃ£o");
 environment_set_variable("IMGUI_OK",                                 "OK");
 environment_set_variable("IMGUI_CANCEL",                             "Cancelar");
 environment_set_variable("IMGUI_SEARCH",                             "Pesquisar");
 environment_set_variable("IMGUI_FILE_NAME_WITH_COLON",               "Nome do arquivo:");
 environment_set_variable("IMGUI_FILE_NAME_WITHOUT_COLON",            "Nome do arquivo");
-environment_set_variable("IMGUI_DIRECTORY_NAME_WITH_COLON",          "Nome do diretório:");
-environment_set_variable("IMGUI_DIRECTORY_NAME_WITHOUT_COLON",       "Nome do diretório");
+environment_set_variable("IMGUI_DIRECTORY_NAME_WITH_COLON",          "Nome do diretÃ³rio:");
+environment_set_variable("IMGUI_DIRECTORY_NAME_WITHOUT_COLON",       "Nome do diretÃ³rio");
 environment_set_variable("IMGUI_SAVE",                               "Salvar");
 environment_set_variable("IMGUI_OPEN",                               "Abrir");

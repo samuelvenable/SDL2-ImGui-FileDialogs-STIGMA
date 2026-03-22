@@ -125,11 +125,15 @@ if (nDialogId == 7) { show_message(lpDialogResult); }&#13;
 &#13;
 if (nDialogId == 8) { show_message(nDialogResult); }&#13;
 &#13;
+if (nDialogId == 9) { show_message(lpDialogResult); }&#13;
+&#13;
+if (nDialogId == 10) { show_message(nDialogResult); }&#13;
+&#13;
 // Next Dialog&#13;
 nDialogId += 1;&#13;
 &#13;
 // End of Demo&#13;
-if (nDialogId == 9) nDialogId = 0;</string>
+if (nDialogId == 11) nDialogId = 0;</string>
           </argument>
         </arguments>
       </action>
@@ -161,7 +165,7 @@ if (nDialogId == 1) { nDialogResult = show_question("Here is a question box. Yes
 if (nDialogId == 2) { nDialogResult = show_message_ext("Here is yet another question box. Yes, no, or cancel?", "Yes", "No", "Cancel"); alarm[0] = 10; }&#13;
 &#13;
 // Set Filter For File Dialogs&#13;
-lpFilter = "Supported Image Files (*.png *.gif *.jpg *.jpeg)|*.png;*.gif;*.jpg;*.jpeg|PNG Image Files (*.png)|*.png|GIF Image Files (*.gif)|*.gif|JPEG Image Files (*.jpg *.jpeg)|*.jpg;*.jpeg";&#13;
+if (nDialogId == 3) lpFilter = "Supported Image Files (*.png *.gif *.jpg *.jpeg)|*.png;*.gif;*.jpg;*.jpeg|PNG Image Files (*.png)|*.png|GIF Image Files (*.gif)|*.gif|JPEG Image Files (*.jpg *.jpeg)|*.jpg;*.jpeg";&#13;
 &#13;
 // Select One Existing File and Echo the Result On-Open-Button&#13;
 if (nDialogId == 3) { lpDialogResult = get_open_filename_ext(lpFilter, "Select a file", "", "Open File"); alarm[0] = 10; }&#13;
@@ -176,13 +180,22 @@ if (nDialogId == 5) { lpDialogResult = get_save_filename_ext(lpFilter, "Untitled
 if (nDialogId == 6) { lpDialogResult = get_directory_alt("Select Directory", ""); alarm[0] = 10; }&#13;
 &#13;
 // Force get_string/integer calls to have a Cancel Button&#13;
-environment_set_variable("IMGUI_DIALOG_CANCELABLE", string(1));&#13;
+if (nDialogId == 7) environment_set_variable("IMGUI_DIALOG_CANCELABLE", string(1));&#13;
 &#13;
 // Enter a String in the TextBox and Echo the Result if the Result is Not Empty&#13;
 if (nDialogId == 7) { lpDialogResult = get_string("Enter a string in the input box below:", "ENTER TEXT HERE"); alarm[0] = 10; }&#13;
 &#13;
 // Enter a Number in the TextBox and Echo the Result&#13;
-if (nDialogId == 8) { nDialogResult = get_integer("Enter a number in the input box below:", 404); alarm[0] = 10; }</string>
+if (nDialogId == 8) { nDialogResult = get_integer("Enter a number in the input box below:", 404); alarm[0] = 10; }&#13;
+&#13;
+// Force get_string/integer calls to have Password Input&#13;
+if (nDialogId == 9) environment_set_variable("IMGUI_DIALOG_PASSWORD", string(1));&#13;
+&#13;
+// Enter a String in the TextBox and Echo the Result if the Result is Not Empty&#13;
+if (nDialogId == 9) { lpDialogResult = get_string("Enter a string in the password box below:", "ENTER TEXT HERE"); alarm[0] = 10; }&#13;
+&#13;
+// Enter a Number in the TextBox and Echo the Result&#13;
+if (nDialogId == 10) { nDialogResult = get_integer("Enter a number in the password box below:", 404); alarm[0] = 10; }</string>
           </argument>
         </arguments>
       </action>
